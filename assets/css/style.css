@@ -66,7 +66,7 @@ section {
 /* shared style  */
 /* header part css  */
 /* navbar design  */
-.header-main, main{
+.container {
     width: calc(100% - 240px);
     margin: 0 auto;
 
@@ -101,17 +101,226 @@ section {
 .nav-link-cart {
     margin-left: 34px;
 }
+
 /* navbar design  */
 /* banner styles  */
-.banner{
+.banner {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0px;
     width: 100%;
+    gap: 1%;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
-.banner-left, .banner-right{
-    width: 48%;
+
+.back-img-b-right {
+    position: relative;
 }
+
+.top-img {
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+/* common styles */
+.banner-title {
+    font-family: var(--Poppins);
+    font-size: 3.2rem;
+    line-height: 70px;
+    font-weight: 700;
+    color: var(--dark-1);
+}
+
+.banner-description {
+    font-family: var(--Poppins);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark-1);
+}
+
+/* common styles */
+.banner-description {
+    max-width: 505px;
+    margin-bottom: 1rem;
+}
+
+.primary-btn {
+    padding: 10px 25px;
+    border-radius: 41px;
+    background-color: var(--btn-color);
+    color: var(--white-color);
+    cursor: pointer;
+    border: 1px solid var(--btn-color);
+    transition: all linear 0.3s;
+    font-weight: 700;
+}
+
+.primary-btn i {
+    margin-left: 5px;
+}
+
+.primary-btn:hover {
+    background-color: var(--white-color);
+    border: 1px solid var(--btn-color);
+    color: var(--btn-color);
+    transition: all linear 0.3s;
+}
+
 /* banner styles  */
+.banner-bottom-img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
 
 /* header part css  */
+/* main part styles  */
+.popular-collection {
+    padding: 50px 0px;
+}
+
+.popular-section-title,
+.product-title {
+    text-align: center;
+    font-family: var(--Poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+    color: var(--dark-1);
+
+}
+
+.popular-card-main {
+    margin: 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.popular-card {
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    padding: 17px 15px;
+    border-radius: 8px;
+}
+
+.product-title {
+    display: block;
+    text-align: left;
+    line-height: 2.5rem;
+    color: #18191F;
+}
+
+.products-price {
+    font-family: var(--Inter);
+    font-size: 1.5rem;
+    line-height: 150%;
+    color: var(--dark-3);
+}
+
+.products-reviews {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.products-reviews li {
+    padding: 5px 0px;
+    margin-right: 5px;
+    color: #FB8200;
+}
+
+.products-reviews li span {
+    font-family: var(--Poppins);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--dark-4);
+}
+
+.products-description {
+    font-family: var(--Inter);
+    font-weight: 700;
+    line-height: 143%;
+    color: var(--dark-5);
+}
+
+.products-description span {
+    display: block;
+}
+
+/* main part styles  */
+/* Responsive styles */
+@media screen and (max-width:575.9px) {
+
+    .container {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+
+    }
+
+    nav {
+        display: none;
+    }
+
+    .d-flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left,
+    .banner-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-right img {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        width: 100%;
+    }
+
+    .banner-description {
+        font-size: 0.8rem;
+        max-width: 95%;
+        margin: 25px auto;
+    }
+
+    .banner-bottom-img-box {
+        gap: 20px;
+    }
+
+    .popular-card-main {
+        margin: 15px 10px;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .popular-card img {
+        width: 100%;
+    }
+
+    .products-reviews {
+        flex-direction: row;
+    }
+
+    .products-reviews li {
+        padding: 5px 0px;
+
+
+    }
+}
