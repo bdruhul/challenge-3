@@ -133,7 +133,8 @@ section {
     color: var(--dark-1);
 }
 
-.banner-description {
+.banner-description,
+.features-description {
     font-family: var(--Poppins);
     font-size: 1rem;
     font-weight: 600;
@@ -255,6 +256,46 @@ section {
     display: block;
 }
 
+.popular-collection-btn {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.popular-btn {
+    font-family: var(--Poppins);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--btn-color);
+    text-transform: capitalize;
+
+}
+
+.popular-btn i {
+    margin-left: 5px;
+}
+
+.features-content {
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+}
+
+.features-title {
+    font-family: var(--Poppins);
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+
+.features-description {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
 /* main part styles  */
 /* Responsive styles */
 @media screen and (max-width:575.9px) {
@@ -320,7 +361,21 @@ section {
 
     .products-reviews li {
         padding: 5px 0px;
+    }
 
+    .features-content {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
 
+    .features-left img {
+        width: 100%;
+    }
+
+    .features-right {
+        text-align: center;
+    }
+    .features-title{
+        font-size: 1.9rem;
     }
 }
